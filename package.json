@@ -2,9 +2,11 @@
   "name": "bin2dec",
   "version": "1.0.0",
   "description": "Binary-to-Decimal number converter",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,10 @@
   },
   "homepage": "https://github.com/Souldier/bin2dec#readme",
   "dependencies": {
-    "webpack": "^4.39.2"
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
   }
 }
