@@ -1,15 +1,24 @@
 import _ from 'lodash';
-import printMe from './print';
-
 
 const component = () => {
     const element = document.createElement('div');
-    const btn = document.createElement('button');
 
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    
-    btn.innerHTML = 'Click me and check the console!';
-    btn.onclick = printMe;
+    element.innerHTML = _.join(['Hello', 'Bin2Dec'], ' ');
+
+
+    const bin2dec = (bin) => {
+        let decimal = 0;
+        let index = bin.length - 1;
+
+        for(; index >= 0; index--) {
+            decimal += parseInt(bin[index])*Math.pow(2, bin.length - 1 - index)
+        }
+
+        return decimal;
+
+    };
+
+    console.log(bin2dec("1000"));
 
     return element;
 }
