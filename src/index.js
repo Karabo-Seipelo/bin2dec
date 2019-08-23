@@ -1,12 +1,7 @@
-import _ from 'lodash';
-import bin2dec from './services/bin2dec';
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import ReactDOM from 'react-dom';
+// eslint-disable-next-line no-unused-vars
+import App from './components/app/app';
 
-const component = () => {
-    const element = document.createElement('div');
-
-    element.innerHTML = _.join(['Hello', 'Bin2Dec'], ' ');
-
-    return element;
-};
-
-document.body.appendChild(component());
+ReactDOM.render(<App />, document.getElementById('root'));

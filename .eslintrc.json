@@ -8,6 +8,7 @@
         "ga": true
     },
     "extends": "eslint:recommended",
+    "parser": "babel-eslint",
     "parserOptions": {
         "sourceType": "module",
         "ecmaVersion": 8
@@ -120,7 +121,7 @@
         "no-undef-init": 0,
         "no-undef": 0,
         "no-undefined": 0,
-        "no-unused-vars": [1, { "vars": "local", "args": "after-used" }],
+        //"no-unused-vars": [1, { "vars": "local", "args": "after-used" }],
         "no-use-before-define": 0,
         //Style
         "array-bracket-spacing": 0,
