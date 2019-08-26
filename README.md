@@ -23,4 +23,4 @@ This challenge requires that the developer implementing it follow these constrai
 
 ---
 
--   [ ] User can enter a variable number of binary digits
+-   [x] User can enter a variable number of binary digits

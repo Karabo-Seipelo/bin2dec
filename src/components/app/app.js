@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import bin2dec from '../../services/bin2dec';
+import './app.scss';
 
 const App = () => {
     const [binary, setBinary] = useState('');
@@ -26,16 +27,16 @@ const App = () => {
     return (
         <div className="full-screen">
             <div>
-                {error && <div>{error}</div>}
+                {error && <div className="error">{error}</div>}
+                <h1>Binary to Decimal </h1>
                 <div>
-                    <h1>Bnary to Decimal </h1>
-                    <input type="string" maxLength="8" onChange={onChangeHander} />
-                    <button onClick={onClickHandler} disabled={error ? true : false}>
+                    <input type="string" maxLength="8" onChange={onChangeHander} placeholder="Enter you binary value" />
+                    <button className="button-line" onClick={onClickHandler} disabled={error ? true : false}>
                         Convert Binary to Decimal
                     </button>
                 </div>
                 <div>
-                    <input name="decimal" type="string" value={decimal} ref={inputEl} disabled />
+                    <input name="decimal" type="string" value={decimal} placeholder="Decimal equivalent" disabled />
                 </div>
             </div>
         </div>
