@@ -31,7 +31,7 @@
     },
     "homepage": "https://github.com/Souldier/bin2dec#readme",
     "dependencies": {
-        "lodash": "^4.17.15"
+        "lodash": "^4.17.19"
     },
     "devDependencies": {
         "@babel/core": "^7.5.5",
